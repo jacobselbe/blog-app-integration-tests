@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
@@ -10,7 +10,7 @@ const { BlogPost } = require('./models');
 
 const app = express();
 
-app.use(morgan('common'));
+// app.use(morgan('common'));
 app.use(express.json());
 
 app.get('/posts', (req, res) => {
